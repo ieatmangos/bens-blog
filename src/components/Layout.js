@@ -17,13 +17,14 @@ padding:  34px 10%;
 color: #252422;
 
 * {
-  font-family: Overpass
+  font-family: Guardian Sans Regular
 }
 
 
 h1, h2, h3, h4, i, a {
-  font-family: Chivo;
+  font-family: Publico;
 }
+a{ text-decoration: none}
 
 .grid {
   display: grid;
@@ -37,8 +38,7 @@ h1, h2, h3, h4, i, a {
 .grid .item {
   padding: 11px;
   overflow: hidden;
-  border-left: 1px solid green;
-  border-top: 1px solid green;
+ 
 }
 
 .item:nth-child(1){
@@ -118,20 +118,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:title" content={title} />
       </Helmet>
       <Navbar />
-      <div className='grid'>
-        <div className='item'><h2>Title of the article</h2><p>lorem20 asdfjknasdjkf sdfkjnsfsadf sdjfbn sdfgj sdfnsdiuhfasdkj dsikhasdfkihewrundsfnsournsknfa skhfiwmcoaj nsicjaksnc helsoos kijasdnc jaskd</p></div>
-        <div className='item'><h2>Title of the article</h2><p>lorem20 asdfjknasdjkf sdfkjnsfsadf sdjfbn sdfgj sdfnsdiuhfasdkj dsikhasdfkihewrundsfnsournsknfa skhfiwmcoaj nsicjaksnc helsoos kijasdnc jaskd</p></div>
-        <div className='item'><h2>Title of the article</h2><p>lorem20 asdfjknasdjkf sdfkjnsfsadf sdjfbn sdfgj sdfnsdiuhfasdkj dsikhasdfkihewrundsfnsournsknfa skhfiwmcoaj nsicjaksnc helsoos kijasdnc jaskd</p></div>
-        <div className='item'><h2>Title of the article</h2><p>lorem20 asdfjknasdjkf sdfkjnsfsadf sdjfbn sdfgj sdfnsdiuhfasdkj dsikhasdfkihewrundsfnsournsknfa skhfiwmcoaj nsicjaksnc helsoos kijasdnc jaskd</p></div>
-        <div className='item'><h2>Title of the article</h2><p>lorem20 asdfjknasdjkf sdfkjnsfsadf sdjfbn sdfgj sdfnsdiuhfasdkj dsikhasdfkihewrundsfnsournsknfa skhfiwmcoaj nsicjaksnc helsoos kijasdnc jaskd</p></div>
-        <div className='item'><h2>Title of the article</h2><p>lorem20 asdfjknasdjkf sdfkjnsfsadf sdjfbn sdfgj sdfnsdiuhfasdkj dsikhasdfkihewrundsfnsournsknfa skhfiwmcoaj nsicjaksnc helsoos kijasdnc jaskd</p></div>
-        <div className='item'><h2>Title of the article</h2><p>lorem20 asdfjknasdjkf sdfkjnsfsadf sdjfbn sdfgj sdfnsdiuhfasdkj dsikhasdfkihewrundsfnsournsknfa skhfiwmcoaj nsicjaksnc helsoos kijasdnc jaskd</p></div>
-        <div className='item'><h2>Title of the article</h2><p>lorem20 asdfjknasdjkf sdfkjnsfsadf sdjfbn sdfgj sdfnsdiuhfasdkj dsikhasdfkihewrundsfnsournsknfa skhfiwmcoaj nsicjaksnc helsoos kijasdnc jaskd</p></div>
-        <div className='item'><h2>Title of the article</h2><p>lorem20 asdfjknasdjkf sdfkjnsfsadf sdjfbn sdfgj sdfnsdiuhfasdkj dsikhasdfkihewrundsfnsournsknfa skhfiwmcoaj nsicjaksnc helsoos kijasdnc jaskd</p></div>
-        <div className='item'><h2>Title of the article</h2><p>lorem20 asdfjknasdjkf sdfkjnsfsadf sdjfbn sdfgj sdfnsdiuhfasdkj dsikhasdfkihewrundsfnsournsknfa skhfiwmcoaj nsicjaksnc helsoos kijasdnc jaskd</p></div>
-        <div className='item'><h2>Title of the article</h2><p>lorem20 asdfjknasdjkf sdfkjnsfsadf sdjfbn sdfgj sdfnsdiuhfasdkj dsikhasdfkihewrundsfnsournsknfa skhfiwmcoaj nsicjaksnc helsoos kijasdnc jaskd</p></div>
-        <div className='item'><h2>Title of the article</h2><p>lorem20 asdfjknasdjkf sdfkjnsfsadf sdjfbn sdfgj sdfnsdiuhfasdkj dsikhasdfkihewrundsfnsournsknfa skhfiwmcoaj nsicjaksnc helsoos kijasdnc jaskd</p></div>
-      </div>
+      
       <div className='page'>{children}</div>
       {/* <Footer /> */}
     </StyledWrapper>

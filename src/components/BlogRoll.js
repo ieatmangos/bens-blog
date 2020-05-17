@@ -9,38 +9,28 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
+      <div className='grid'>
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
+            <div className="item" key={post.id}>
               <article
-                className={`blog-list-item tile is-child box notification ${
+                className={`${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
               >
                 <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                        }}
-                      />
-                    </div>
-                  ) : null}
-                  <p className="post-meta">
+                  <div className="post-meta">
                     <Link
-                      className="title has-text-primary is-size-4"
+                      className="black"
                       to={post.fields.slug}
                     >
-                      {post.frontmatter.title}
+                      <h3>{post.frontmatter.title}</h3>
                     </Link>
                     <span> &bull; </span>
                     <span className="subtitle is-size-5 is-block">
                       {post.frontmatter.date}
                     </span>
-                  </p>
+                  </div>
                 </header>
                 <p>
                   {post.excerpt}
@@ -53,7 +43,8 @@ class BlogRoll extends React.Component {
               </article>
             </div>
           ))}
-      </div>
+       </div>
+     
     )
   }
 }
