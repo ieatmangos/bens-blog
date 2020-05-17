@@ -13,6 +13,8 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
+  composition,
+
 }) => {
   const PostContent = contentComponent || Content
 
@@ -56,7 +58,7 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
-
+console.log(post)
   return (
     <Layout>
       <BlogPostTemplate
@@ -74,6 +76,7 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        
       />
     </Layout>
   )
@@ -97,6 +100,10 @@ export const pageQuery = graphql`
         title
         description
         tags
+        featuredimage {
+        	  id
+            publicURL
+        	}
       }
     }
   }
