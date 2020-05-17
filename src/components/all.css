@@ -1,0 +1,102 @@
+* {
+  font-family: Guardian Sans Regular
+}
+
+h1, h2, h3, h4, i, a {
+  font-family: Publico;
+}
+a{ text-decoration: none}
+
+p {
+  text-align: justify;
+  text-justify: inter-word
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  grid-gap: 21px;
+
+}
+
+.grid .item {
+  padding: 11px;
+  overflow: hidden;
+  border-left: 1px solid #252422;
+  position: relative;
+}
+.item .overlay {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      #ffffff 100%
+    );
+  width: 100%;
+  height: 34px;
+  position: absolute;
+  bottom: 0px; left: 0px;
+ 
+}
+
+.item:nth-child(1){
+  grid-row: span 1;
+  grid-column: span 3;
+}
+.item:nth-child(2){
+  grid-row: span 3;
+}
+.item:nth-child(4){
+  grid-row: span 1;
+  grid-column: span 2;
+}
+.item:nth-child(6){
+  grid-row: span 1;
+  grid-column: span 3;
+}
+.item:nth-child(7){
+  grid-row: span 2;
+  grid-column: span 1;
+}
+.item:nth-child(8){
+  grid-row: span 2;
+
+}
+.item:nth-child(9){
+  grid-row: span 3;
+
+}
+
+
+
+.white {
+  color: #FFFCF2
+}
+.lightgray {
+  color: #CCC5B9
+}
+.darkgray {
+  color: #403D39
+}
+.black {
+  color: #252422
+}
+.blue {
+  color: #6EE5DD;
+}
+.white-bg {
+  background-color: #FFFCF2
+}
+.lightgray-bg {
+  background-color: #CCC5B9
+}
+.darkgray-bg {
+  background-color: #403D39
+}
+.black-bg {
+  background-color: #252422
+}
+.blue-bg {
+  background-color: #6EE5DD;
+}

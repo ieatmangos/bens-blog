@@ -7,6 +7,7 @@ class BlogRoll extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
+    console.log(posts)
 
     return (
       <div className='grid'>
@@ -26,10 +27,10 @@ class BlogRoll extends React.Component {
                     >
                       <h3>{post.frontmatter.title}</h3>
                     </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
+                    {/* <span> &bull; </span> */}
+                    {/* <span className="subtitle is-size-5 is-block">
                       {post.frontmatter.date}
-                    </span>
+                    </span> */}
                   </div>
                 </header>
                 <p>
@@ -41,6 +42,7 @@ class BlogRoll extends React.Component {
                   </Link>
                 </p>
               </article>
+              <div className='overlay'></div>
             </div>
           ))}
        </div>
@@ -67,7 +69,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              excerpt(pruneLength: 800)
               id
               fields {
                 slug

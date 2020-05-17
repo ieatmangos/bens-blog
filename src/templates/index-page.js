@@ -5,6 +5,20 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import styled from 'styled-components'
+
+const STitle = styled.div`
+
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px solid #403D39;
+    margin: 34px 0px;
+
+    h1{
+      font-size: 72px
+    }
+ 
+`
 
 export const IndexPageTemplate = ({
   image,
@@ -16,20 +30,16 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-
-  
-   
+    <STitle className='page-title'>
+      <h1>The Gin Joint</h1>
+    </STitle>
     <section className="">
-  
-                  <h3 className="">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="">
-                    <Link className="" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
+      <BlogRoll />
+      <div className="">
+        <Link className="" to="/blog">
+          Read more
+        </Link>
+      </div>
     </section>
   </div>
 )
