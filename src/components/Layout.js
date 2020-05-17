@@ -31,13 +31,14 @@ a{ text-decoration: none}
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: 200px;
   grid-auto-flow: dense;
-  grid-gap: 5px;
+  grid-gap: 21px;
 
 }
 
 .grid .item {
   padding: 11px;
   overflow: hidden;
+  border-left: 1px solid #252422
  
 }
 
