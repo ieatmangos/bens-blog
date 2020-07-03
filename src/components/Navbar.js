@@ -60,19 +60,19 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="flex w-full justify-evenly py-4">
-              <Link className="px-24 pb-6 border-b border-gray-300 text-2xl" to="/">
+              <Link className="px-4 md:px-12 xl:px-24 pb-6 border-b border-gray-300 text-xl md:text-2xl" to="/">
                 Home
               </Link>
-              <Link className="px-24 pb-6 border-b border-gray-300 text-2xl" to="/about">
+              <Link className="px-4 md:px-12 xl:px-24 pb-6 border-b border-gray-300 text-xl md:text-2xl" to="/about">
                 About
               </Link>
-              <Link className="px-24 pb-6 border-b border-gray-300 text-2xl" to="/products">
+              <Link className="px-4 md:px-12 xl:px-24 pb-6 border-b border-gray-300 text-xl md:text-2xl" to="/products">
                 Products
               </Link>
-              <Link className="px-24 pb-6 border-b border-gray-300 text-2xl" to="/blog">
+              <Link className="px-4 md:px-12 xl:px-24 pb-6 border-b border-gray-300 text-xl md:text-2xl" to="/blog">
                 Blog
               </Link>
-              <Link className="px-24 pb-6 border-b border-gray-300 text-2xl" to="/contact">
+              <Link className="px-4 md:px-12 xl:px-24 pb-6 border-b border-gray-300 text-xl md:text-2xl" to="/contact">
                 Contact
               </Link>
               {/* <Link className="px-24 pb-6 border-b border-gray-300 text-2xl" to="/contact/examples">
