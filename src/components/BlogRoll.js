@@ -16,7 +16,7 @@ class BlogRoll extends React.Component {
           posts.map(({ node: post }) => {
             return(
 
-            <div className="col-span-2 py-4" key={post.id}>
+            <div className="col-span-2 py-4 border-l pl-8 border-gray-300" key={post.id}>
               <article
                 className={`${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
@@ -28,9 +28,9 @@ class BlogRoll extends React.Component {
                     
                       to={post.fields.slug}
                     >
-                      <div className='flex justify-between text-2xl'>
-                      <h3 className="text-gray-500">{post.frontmatter.title}</h3>
-                      <Link  to={post.fields.slug}>→</Link>
+                      <div className='flex justify-between text-2xl mb-8'>
+                      <h3 className="text-gray-500 ">{post.frontmatter.title}</h3>
+                      <Link className='text-turquise'  to={post.fields.slug}>→</Link>
                       </div>
                     </Link>
                     {/* <span> &bull; </span> */}
