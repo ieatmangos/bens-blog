@@ -3,7 +3,7 @@ templateKey: blog-post
 date: 2020-07-03T19:24:17.126Z
 description: Gin Cocktails
 featuredpost: true
-featuredimage: /img/gin-2300125_1280.jpg
+featuredimage: /img/screen-shot-2020-06-04-at-12.31.12-pm.png
 title: Gin Cocktails
 tags:
   - gin
