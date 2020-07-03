@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 import Chivo from './Chivo-Regular.woff';
 import Overpass from './Overpass-Regular.woff';
 import GuardianSansRegular from './GuardianSansRegular.woff';
-import TTNormsBold from './TTNormsPro-bold.woff2'
+import TTNormsBold from './TTNormsPro-Bold.woff2'
 import TTNorms from './TTNormsPro-Regular.woff2'
 import TTNormsLight from './TTNormsPro-Light.woff2'
 // import NameOfYourFontWoff2 from './nameOfYourFont.woff2';
