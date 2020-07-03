@@ -14,10 +14,7 @@ const STitle = styled.div`
     border-bottom: 4px solid #403D39;
     margin: 34px 0px;
 
-    h1{
-      font-size: 72px
-    }
- 
+
 `
 
 export const IndexPageTemplate = ({
@@ -29,16 +26,14 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  <div>
-    <STitle className='page-title'>
-      <h1>The Gin Joint</h1>
-    </STitle>
+  <div className=''>
+    <div className='flex justify-center border-b-4 -md border-black my-16 '>
+      <h1 className='text-5xl'>THE GIN JOINT</h1>
+    </div>
     <section className="">
       <BlogRoll />
       <div className="">
-        <Link className="" to="/blog">
-          Read more
-        </Link>
+ 
       </div>
     </section>
   </div>

@@ -10,11 +10,6 @@ import { createGlobalStyle } from 'styled-components';
 
 import FontProvider from '../assets/fonts/FontProvider'
 const StyledWrapper = styled.div`
-background: #FFFCF2;
-width: 80%;
-margin: 0px auto;
-padding:  34px 10%;
-color: #252422;
 
 
 
@@ -24,7 +19,7 @@ const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
     
-    <StyledWrapper>
+    <div className='bg-white px-24'>
       <FontProvider/>
       <Helmet>
         <html lang="en" />
@@ -35,7 +30,7 @@ const TemplateWrapper = ({ children }) => {
       <Navbar />
       <div className='page'>{children}</div>
       {/* <Footer /> */}
-    </StyledWrapper>
+    </div>
   )
 }
 

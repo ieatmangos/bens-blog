@@ -7,25 +7,31 @@ class BlogRoll extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-    console.log(posts)
+    console.log(data)
 
     return (
       <div className='grid'>
         {posts &&
-          posts.map(({ node: post }) => (
-            <div className="item" key={post.id}>
+        
+          posts.map(({ node: post }) => {
+            return(
+
+            <div className="col-span-2 py-4" key={post.id}>
               <article
                 className={`${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
               >
                 <header>
-                  <div className="post-meta">
+                  <div >
                     <Link
-                      className="black"
+                    
                       to={post.fields.slug}
                     >
-                      <h3>{post.frontmatter.title}</h3>
+                      <div className='flex justify-between text-2xl'>
+                      <h3 className="text-gray-500">{post.frontmatter.title}</h3>
+                      <Link  to={post.fields.slug}>→</Link>
+                      </div>
                     </Link>
                     {/* <span> &bull; </span> */}
                     {/* <span className="subtitle is-size-5 is-block">
@@ -34,17 +40,13 @@ class BlogRoll extends React.Component {
                   </div>
                 </header>
                 <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
+                  {post.excerpt}   
                 </p>
               </article>
-              <div className='overlay'></div>
+       
+              
             </div>
-          ))}
+          )})}
        </div>
      
     )

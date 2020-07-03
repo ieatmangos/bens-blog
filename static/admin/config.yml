@@ -26,6 +26,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Column Span", name: "col-span", widget: "select", default: "1", options: ["1", "2", "3", "4"]}
+      - {label: "Row Span", name: "row-soan", widget: "select", default: "1", options: ["1", "2", "3", "4"]}
   - name: "tester"
     label: "testing stuff"
     folder: "src/pages/blog"
