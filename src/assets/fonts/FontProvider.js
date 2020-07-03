@@ -19,7 +19,7 @@ export default createGlobalStyle`
 @font-face {
         font-family: 'TTNorms';
         src: local('TTNorms'),
-        url(${Chivo}) format('woff2');
+        url(${TTNorms}) format('woff2');
         font-weight: 300;
         font-style: normal;
     }
