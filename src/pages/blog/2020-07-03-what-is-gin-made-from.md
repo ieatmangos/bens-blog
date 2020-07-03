@@ -7,6 +7,8 @@ featuredimage: /img/gin-3714701_1280.jpg
 title: Types of Gin
 tags:
   - gin
+colspan: "2"
+rowspan: "2"
 ---
 In the EU, as in many other regions and countries of the world, there’re legal definitions of gin which producers and other products must adhere to in order to label their product as gin. The EU regulations are the strictest such definitions for gin in the world and they form the basis of all gin regulations around the world. There’re many types of gin out there but the synopsis of the most common types of gin are as follows:
 
