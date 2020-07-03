@@ -7,8 +7,8 @@ const Post = ({ post }) => {
   const image =
     post.frontmatter.featuredimage &&
     post.frontmatter.featuredimage.childImageSharp.fluid.src;
-  const colSpan = post.frontmatter.colspan || 1;
-  const rowSpan = post.frontmatter.rowspan || 1;
+  const colSpan = post.frontmatter.colspan || 2;
+  const rowSpan = post.frontmatter.rowspan || 2;
   const myRef = React.useRef()
   React.useEffect(() => {
     if(myRef.current.innerText){
@@ -23,7 +23,7 @@ const Post = ({ post }) => {
     <div
     ref={myRef}
       className={`
-                  col-span-2 md:col-span-${colSpan}
+                  col-span-2 md:col-span-${colSpan === 1 ? 2 : colSpan}
                   col-span-2 md:row-span-${rowSpan} 
                   py-4 border-l pl-8 border-gray-300`}
       key={post.id}
@@ -65,7 +65,7 @@ class BlogRoll extends React.Component {
           posts.map(({ node: post }, index) => {
             return <Post key={index} post={post} />;
           })}
-          
+
       </div>
     );
   }
