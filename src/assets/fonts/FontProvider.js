@@ -4,28 +4,30 @@ import Chivo from './Chivo-Regular.woff';
 import Overpass from './Overpass-Regular.woff';
 import GuardianSansRegular from './GuardianSansRegular.woff';
 import TTNormsBold from './TTNormsPro-bold.woff2'
-import TTNorms from './TTNormsPro-regular.woff2'
-import TTNormsLight from './TTNormsPro-light.woff2'
+import TTNorms from './TTNormsPro-Regular.woff2'
+import TTNormsLight from './TTNormsPro-Light.woff2'
 // import NameOfYourFontWoff2 from './nameOfYourFont.woff2';
 
 export default createGlobalStyle`
 @font-face {
         font-family: 'TTNormsBold';
         src: local('TTNormsBold'),
-        url(${Chivo}) format('woff');
-        font-weight: bold;
+        url(${TTNormsBold}) format('woff2');
+        font-weight: 900;
         font-style: normal;
     }
 @font-face {
         font-family: 'TTNorms';
         src: local('TTNorms'),
-        url(${Chivo}) format('woff');
+        url(${Chivo}) format('woff2');
+        font-weight: 300;
         font-style: normal;
     }
 @font-face {
         font-family: 'TTNormsLight';
         src: local('TTNormsLight'),
-        url(${Chivo}) format('woff');
+        url(${TTNormsLight}) format('woff2');
+        font-weight: 300;
         font-style: normal;
     }
 

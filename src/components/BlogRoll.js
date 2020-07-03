@@ -39,7 +39,7 @@ class BlogRoll extends React.Component {
                     </span> */}
                   </div>
                 </header>
-                <p>
+                <p className='text-xl'>
                   {post.excerpt}   
                 </p>
               </article>
