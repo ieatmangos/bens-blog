@@ -7,7 +7,7 @@ featuredimage: /img/screen-shot-2020-06-04-at-12.31.12-pm.png
 title: Gin Cocktails
 tags:
   - gin
-colspan: "1"
+colspan: "2"
 rowspan: "1"
 ---
 From the simple yet iconic Gin and Tonic to the precursor of the the world’s most famous cocktail, the Martinez, gin has been used in cocktails pretty almost since cocktails began. Its use in so many cocktails that survived cocktail resurgences over the last century and a half stand testament to how versatile a spirit this juniper flavored liquor actually is. The gin cocktail repertoire include many classics like the Negroni, the Gimlet, the French 75, the Rickey, the Ramos Gin Fizz, the Tom Collins, like the Last Word, the Aviation, and the Singapore Sling. Head over to the Cocktails section to check out everything done with gin, past and present!
