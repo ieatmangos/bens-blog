@@ -9,5 +9,7 @@ tags:
   - Gin
   - juniper
   - botanicals
+colspan: "3"
+rowspan: "2"
 ---
 Gin is essentially excellently and uniquely flavored vodka. To make gin one must first make neutral grain spirit i.e. spirit distilled to a high, flavorless, level. Then you redistill that neutral grain spirit with botanicals -with juniper being the omnipresent flavor- to produce gin. However, not all gins are created equal and there’re different methods you can use to incorporate the flavors of botanicals into your neutral grain spirit. Click here to learn all about how gin is made.
