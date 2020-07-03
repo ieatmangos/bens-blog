@@ -18,8 +18,8 @@ const StyledWrapper = styled.div`
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
-    
-    <div className='bg-white px-24'>
+    <div className='bg-white max-w-full'>
+    <div className='px-8 sm:px-16 md:px-24 lg:px-48 max-w-6xl mx-auto overflow-hidden max-w-full'>
       <FontProvider/>
       <Helmet>
         <html lang="en" />
@@ -30,6 +30,7 @@ const TemplateWrapper = ({ children }) => {
       <Navbar />
       <div className='page'>{children}</div>
       {/* <Footer /> */}
+    </div>
     </div>
   )
 }

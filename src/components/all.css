@@ -8,14 +8,20 @@
   font-family: TTNorms;
 }
 
-h1, h2, h3, h4, i, a {
+h1, h2, h3, h4, i {
   font-family: TTNormsBold;
+  @apply text-gray-500;
 }
-a{ text-decoration: none}
+a{ 
+  font-family: TTNormsBold;
+  text-decoration: none;
+  @apply text-turquise;
+}
 
 p {
   font-family: TTNormsLight;
   text-align: justify;
+  @apply text-black;
 
 }
 

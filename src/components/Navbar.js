@@ -35,13 +35,13 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className=""
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
+        <div className="">
+          <div className="">
+            <Link to="/" className="" title="Logo">
               {/* <img src={logo} alt="Kaldi" style={{ width: '88px' }} /> */}
             </Link>
             {/* Hamburger menu */}
@@ -59,26 +59,29 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
+            <div className="flex w-full justify-evenly py-4">
+              <Link className="px-24 pb-6 border-b border-gray-300 text-2xl" to="/">
+                Home
+              </Link>
+              <Link className="px-24 pb-6 border-b border-gray-300 text-2xl" to="/about">
                 About
               </Link>
-              <Link className="navbar-item" to="/products">
+              <Link className="px-24 pb-6 border-b border-gray-300 text-2xl" to="/products">
                 Products
               </Link>
-              <Link className="navbar-item" to="/blog">
+              <Link className="px-24 pb-6 border-b border-gray-300 text-2xl" to="/blog">
                 Blog
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className="px-24 pb-6 border-b border-gray-300 text-2xl" to="/contact">
                 Contact
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
+              {/* <Link className="px-24 pb-6 border-b border-gray-300 text-2xl" to="/contact/examples">
                 Form Examples
-              </Link>
+              </Link> */}
             </div>
             <div className="navbar-end has-text-centered">
               <a
-                className="navbar-item"
+                className=""
                 href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
                 target="_blank"
                 rel="noopener noreferrer"
